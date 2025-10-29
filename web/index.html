@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Aquavida - Rede Nacional de Água, Energia Solar e Fibra Óptica para transformar o Brasil">
+    <title>Projeto Aquavida | Água, Energia e Conectividade para Todo Brasil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aqua-blue': '#0891b2',
+                        'aqua-dark': '#164e63',
+                        'energy-yellow': '#fbbf24',
+                        'energy-dark': '#f59e0b',
+                        'nature-green': '#10b981',
+                        'nature-dark': '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-hero {
+            background: linear-gradient(135deg, #0891b2 0%, #10b981 50%, #fbbf24 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #0891b2, #10b981, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        
+        .pulse-button {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .8; }
+        }
+        
+        .wave {
+            animation: wave 3s ease-in-out infinite;
+        }
+        
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-water text-aqua-blue text-3xl"></i>
+                    <span class="text-2xl font-bold gradient-text">AQUAVIDA</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#problema" class="text-gray-700 hover:text-aqua-blue transition">O Problema</a>
+                    <a href="#solucao" class="text-gray-700 hover:text-aqua-blue transition">Solução</a>
+                    <a href="#como-funciona" class="text-gray-700 hover:text-aqua-blue transition">Como Funciona</a>
+                    <a href="#impactos" class="text-gray-700 hover:text-aqua-blue transition">Impactos</a>
+                    <a href="#roadmap" class="text-gray-700 hover:text-aqua-blue transition">Roadmap</a>
+                </div>
+                <a href="#apoiar" class="bg-gradient-to-r from-aqua-blue to-nature-green text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition pulse-button">
+                    Apoiar o Projeto
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20" style="position: relative;">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 text-white text-9xl animate-float">💧</div>
+            <div class="absolute bottom-20 right-20 text-white text-9xl animate-float" style="animation-delay: 1s;">☀️</div>
+            <div class="absolute top-1/2 left-1/2 text-white text-9xl animate-float" style="animation-delay: 2s;">🌐</div>
+        </div>
+        
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                O Futuro do Brasil<br>
+                <span class="text-energy-yellow">Começa Agora</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+                Água, energia e conectividade: os pilares do novo Brasil
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+                <div class="bg-white/20 backdrop-blur-md rounded-lg p-6 text-white">
+                    <i class="fas fa-tint text-4xl mb-2"></i>
+                    <p class="font-bold text-2xl">ÁGUA</p>
+                    <p class="text-sm">Para todos</p>
+                </div>
+                <div class="text-white text-3xl font-bold hidden md:block">+</div>
+                <div class="bg-white/20 backdrop-blur-md rounded-lg p-6 text-white">
+                    <i class="fas fa-solar-panel text-4xl mb-2"></i>
+                    <p class="font-bold text-2xl">ENERGIA</p>
+                    <p class="text-sm">Limpa e renovável</p>
+                </div>
+                <div class="text-white text-3xl font-bold hidden md:block">+</div>
+                <div class="bg-white/20 backdrop-blur-md rounded-lg p-6 text-white">
+                    <i class="fas fa-network-wired text-4xl mb-2"></i>
+                    <p class="font-bold text-2xl">INTERNET</p>
+                    <p class="text-sm">De alta velocidade</p>
+                </div>
+            </div>
+            <a href="#solucao" class="inline-block bg-white text-aqua-blue px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-2xl">
+                Conheça o Projeto <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-3xl"></i>
+        </div>
+    </section>
+
+    <!-- O Problema -->
+    <section id="problema" class="py-20 bg-white relative z-10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    A Crise que Não Podemos Ignorar
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Enquanto temos recursos abundantes, milhões de brasileiros sofrem sem acesso ao básico
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-red-50 rounded-2xl p-8 text-center card-hover border-2 border-red-200">
+                    <i class="fas fa-exclamation-triangle text-red-500 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Crise Hídrica</h3>
+                    <p class="stat-number text-red-600">28%</p>
+                    <p class="text-gray-700 mt-2">Capacidade média dos reservatórios urbanos em 2025</p>
+                </div>
+                
+                <div class="bg-orange-50 rounded-2xl p-8 text-center card-hover border-2 border-orange-200">
+                    <i class="fas fa-sun text-orange-500 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Desertificação</h3>
+                    <p class="stat-number text-orange-600">Acelerada</p>
+                    <p class="text-gray-700 mt-2">No semiárido nordestino, afetando milhões de vidas</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 text-center card-hover border-2 border-gray-200">
+                    <i class="fas fa-wifi text-gray-500 text-5xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Exclusão Digital</h3>
+                    <p class="stat-number text-gray-600">+1500</p>
+                    <p class="text-gray-700 mt-2">Municípios com conexão precária ou inexistente</p>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-aqua-blue/10 to-nature-green/10 rounded-2xl p-10 border-2 border-aqua-blue/20">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                            Enquanto Isso...
+                        </h3>
+                        <ul class="space-y-4 text-lg text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-water text-aqua-blue text-2xl mr-4 mt-1"></i>
+                                <span>O Rio Amazonas despeja <strong class="text-aqua-blue">209.000 m³/s</strong> de água doce no mar</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-sun text-energy-yellow text-2xl mr-4 mt-1"></i>
+                                <span>O Brasil possui <strong class="text-energy-dark">um dos maiores potenciais solares</strong> do mundo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marked-alt text-nature-green text-2xl mr-4 mt-1"></i>
+                                <span>Temos vasta extensão territorial ideal para <strong class="text-nature-dark">infraestrutura de conectividade</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 text-center">
+                        <div class="text-8xl mb-4">🌊</div>
+                        <p class="text-2xl font-bold text-aqua-blue">
+                            Recursos Abundantes<br>
+                            <span class="text-gray-700">Distribuição Desigual</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A Solução -->
+    <section id="solucao" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    A Solução Integrada
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Uma superinfraestrutura nacional que conecta água, energia e dados
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gradient-to-br from-aqua-blue to-aqua-dark rounded-2xl p-8 card-hover">
+                    <div class="text-6xl mb-4">💧</div>
+                    <h3 class="text-2xl font-bold mb-4">Aquadutos Solares</h3>
+                    <p class="text-gray-100 leading-relaxed">
+                        Captação e distribuição de água doce do Rio Amazonas até todos os municípios brasileiros através de uma rede inteligente de aquadutos.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-white/20">
+                        <p class="text-sm font-semibold text-gray-200">BENEFÍCIOS:</p>
+                        <ul class="mt-2 space-y-2 text-sm">
+                            <li>✓ Segurança hídrica nacional</li>
+                            <li>✓ Agricultura sustentável</li>
+                            <li>✓ Combate à desertificação</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-energy-yellow to-energy-dark rounded-2xl p-8 card-hover">
+                    <div class="text-6xl mb-4">☀️</div>
+                    <h3 class="text-2xl font-bold mb-4">Energia Solar</h3>
+                    <p class="text-gray-900 leading-relaxed">
+                        Painéis fotovoltaicos sobre os dutos e reservatórios gerando energia limpa para bombeamento e abastecimento local.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-900/20">
+                        <p class="text-sm font-semibold text-gray-900">BENEFÍCIOS:</p>
+                        <ul class="mt-2 space-y-2 text-sm text-gray-900">
+                            <li>✓ Autossuficiência energética</li>
+                            <li>✓ Redução de emissões de CO₂</li>
+                            <li>✓ Geração de excedente vendável</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-nature-green to-nature-dark rounded-2xl p-8 card-hover">
+                    <div class="text-6xl mb-4">🌐</div>
+                    <h3 class="text-2xl font-bold mb-4">Fibra Óptica</h3>
+                    <p class="text-gray-100 leading-relaxed">
+                        Cabos de fibra óptica de alta velocidade integrados à estrutura dos aquadutos, criando a maior malha de internet da América Latina.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-white/20">
+                        <p class="text-sm font-semibold text-gray-200">BENEFÍCIOS:</p>
+                        <ul class="mt-2 space-y-2 text-sm">
+                            <li>✓ Inclusão digital total</li>
+                            <li>✓ Suporte para 5G e IoT</li>
+                            <li>✓ Telemedicina e educação online</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-10 border border-white/20">
+                <h3 class="text-3xl font-bold text-center mb-8">O Conceito: "O Aquaduto Inteligente"</h3>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-gray-200 mb-6 leading-relaxed">
+                            Cada tubo principal será equipado com um <strong class="text-energy-yellow">duto secundário para cabos de fibra óptica</strong>, protegido e acessível por válvulas técnicas.
+                        </p>
+                        <p class="text-lg text-gray-200 leading-relaxed">
+                            Os painéis solares sobre os aquadutos não apenas alimentam o sistema de bombeamento, mas também geram excedente para as comunidades próximas.
+                        </p>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-8 border border-white/10">
+                        <h4 class="text-xl font-bold mb-4 text-energy-yellow">Especificações Técnicas:</h4>
+                        <ul class="space-y-3 text-gray-200">
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i> Banda larga de <strong>1 Tbps</strong> nas capitais</li>
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i> <strong>10 Gbps</strong> nos municípios</li>
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i> Backbone nacional para 5G e IoT</li>
+                            <li><i class="fas fa-check-circle text-nature-green mr-2"></i> Monitoramento em tempo real</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Como Funciona
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Um sistema triplo integrado que transforma a infraestrutura do Brasil
+                </p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="relative">
+                    <!-- Linha conectora vertical -->
+                    <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-aqua-blue via-energy-yellow to-nature-green transform -translate-x-1/2"></div>
+                    
+                    <!-- Etapa 1 -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center gap-8">
+                            <div class="md:w-1/2 md:text-right">
+                                <div class="bg-gradient-to-br from-aqua-blue/10 to-aqua-blue/5 rounded-2xl p-8 card-hover">
+                                    <h3 class="text-2xl font-bold text-aqua-dark mb-4">
+                                        <span class="text-4xl">1.</span> Captação
+                                    </h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Estações de captação na foz do Rio Amazonas coletam água doce antes que ela se misture ao oceano. Sistema de filtragem e tratamento inicial garante qualidade.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-20 h-20 bg-aqua-blue rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg z-10 shrink-0">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div class="md:w-1/2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Etapa 2 -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center gap-8">
+                            <div class="md:w-1/2"></div>
+                            <div class="w-20 h-20 bg-energy-yellow rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg z-10 shrink-0">
+                                <i class="fas fa-solar-panel"></i>
+                            </div>
+                            <div class="md:w-1/2">
+                                <div class="bg-gradient-to-br from-energy-yellow/10 to-energy-yellow/5 rounded-2xl p-8 card-hover">
+                                    <h3 class="text-2xl font-bold text-energy-dark mb-4">
+                                        <span class="text-4xl">2.</span> Transporte Solar
+                                    </h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Aquadutos cobertos por painéis solares geram energia para o bombeamento inteligente. Sistema IoT monitora pressão, fluxo e qualidade da água em tempo real.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Etapa 3 -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center gap-8">
+                            <div class="md:w-1/2 md:text-right">
+                                <div class="bg-gradient-to-br from-nature-green/10 to-nature-green/5 rounded-2xl p-8 card-hover">
+                                    <h3 class="text-2xl font-bold text-nature-dark mb-4">
+                                        <span class="text-4xl">3.</span> Conectividade
+                                    </h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Cabos de fibra óptica instalados nos dutos secundários levam internet de alta velocidade para todos os pontos da rede, criando uma malha digital nacional.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-20 h-20 bg-nature-green rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg z-10 shrink-0">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="md:w-1/2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Etapa 4 -->
+                    <div class="relative">
+                        <div class="flex flex-col md:flex-row items-center gap-8">
+                            <div class="md:w-1/2"></div>
+                            <div class="w-20 h-20 bg-gradient-to-br from-aqua-blue to-nature-green rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg z-10 shrink-0">
+                                <i class="fas fa-city"></i>
+                            </div>
+                            <div class="md:w-1/2">
+                                <div class="bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl p-8 card-hover text-white">
+                                    <h3 class="text-2xl font-bold mb-4">
+                                        <span class="text-4xl">4.</span> Distribuição Local
+                                    </h3>
+                                    <p class="text-gray-100 leading-relaxed">
+                                        Cada município recebe um ponto de distribuição com reservatório, microestação solar e mini-hub de dados. Comunidades ganham acesso aos três recursos simultaneamente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gradient-to-r from-aqua-blue/5 via-energy-yellow/5 to-nature-green/5 rounded-2xl p-10 border-2 border-gray-200">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">
+                    Rede Nacional Tríplice
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-1 bg-aqua-blue mx-auto mb-4"></div>
+                        <p class="font-bold text-aqua-blue text-lg">Linha Azul</p>
+                        <p class="text-gray-600">Aquadutos e ramificações</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-1 bg-energy-yellow mx-auto mb-4"></div>
+                        <p class="font-bold text-energy-dark text-lg">Linha Amarela</p>
+                        <p class="text-gray-600">Painéis solares e energia</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-1 bg-nature-green mx-auto mb-4"></div>
+                        <p class="font-bold text-nature-green text-lg">Linha Verde</p>
+                        <p class="text-gray-600">Fibra óptica e dados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impactos -->
+    <section id="impactos" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Impactos Transformadores
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Números que mudam a história do Brasil
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-lg">
+                    <i class="fas fa-users text-aqua-blue text-5xl mb-4"></i>
+                    <p class="stat-number text-aqua-blue">+50M</p>
+                    <p class="text-gray-700 font-semibold mt-2">Pessoas Beneficiadas</p>
+                    <p class="text-sm text-gray-500 mt-2">Com acesso à água potável</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-lg">
+                    <i class="fas fa-briefcase text-nature-green text-5xl mb-4"></i>
+                    <p class="stat-number text-nature-green">+3M</p>
+                    <p class="text-gray-700 font-semibold mt-2">Empregos Gerados</p>
+                    <p class="text-sm text-gray-500 mt-2">Diretos e indiretos</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-lg">
+                    <i class="fas fa-bolt text-energy-yellow text-5xl mb-4"></i>
+                    <p class="stat-number text-energy-dark">120k</p>
+                    <p class="text-gray-700 font-semibold mt-2">GWh/ano</p>
+                    <p class="text-sm text-gray-500 mt-2">De energia solar gerada</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-lg">
+                    <i class="fas fa-map-marker-alt text-purple-500 text-5xl mb-4"></i>
+                    <p class="stat-number text-purple-600">+5000</p>
+                    <p class="text-gray-700 font-semibold mt-2">Municípios Conectados</p>
+                    <p class="text-sm text-gray-500 mt-2">Internet de alta velocidade</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-leaf text-nature-green text-3xl mr-4"></i>
+                        Impacto Ambiental
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-nature-green text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Recuperação de biomas e reflorestamento natural</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-nature-green text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Redução de 20% das áreas desertificadas até 2040</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-nature-green text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Reativação de ciclos de chuva e resfriamento microclimático</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-nature-green text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Neutralização de CO₂ por reflorestamento indireto</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-chart-line text-aqua-blue text-3xl mr-4"></i>
+                        Impacto Socioeconômico
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-aqua-blue text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Educação digital em áreas rurais e remotas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-aqua-blue text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Telemedicina e atendimento remoto universal</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-aqua-blue text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Modernização agrícola com IoT e sensores climáticos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-aqua-blue text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Estímulo ao empreendedorismo digital local</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Roadmap de Implementação
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Um plano estratégico de 10 anos para transformar o Brasil
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Fase 1 -->
+                    <div class="bg-gradient-to-r from-aqua-blue/10 to-aqua-blue/5 rounded-2xl p-8 card-hover border-l-4 border-aqua-blue">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800 flex items-center">
+                                <span class="bg-aqua-blue text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">1</span>
+                                Piloto Norte-Nordeste
+                            </h3>
+                            <span class="text-aqua-blue font-bold mt-2 md:mt-0">0-4 Anos</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Construção de 1.000 km de aquaduto com energia solar e fibra óptica até o Ceará. Provar viabilidade técnica e gerar os primeiros resultados concretos.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-aqua-blue/20 text-aqua-dark px-3 py-1 rounded-full text-sm">Estações de captação</span>
+                            <span class="bg-aqua-blue/20 text-aqua-dark px-3 py-1 rounded-full text-sm">Painéis solares</span>
+                            <span class="bg-aqua-blue/20 text-aqua-dark px-3 py-1 rounded-full text-sm">Rede de fibra</span>
+                            <span class="bg-aqua-blue/20 text-aqua-dark px-3 py-1 rounded-full text-sm">IoT + IA</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Fase 2 -->
+                    <div class="bg-gradient-to-r from-energy-yellow/10 to-energy-yellow/5 rounded-2xl p-8 card-hover border-l-4 border-energy-yellow">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800 flex items-center">
+                                <span class="bg-energy-yellow text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">2</span>
+                                Expansão Regional
+                            </h3>
+                            <span class="text-energy-dark font-bold mt-2 md:mt-0">4-8 Anos</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Integração de reservatórios estaduais e conexão entre Amazônia, Nordeste e Sudeste. Criação de hubs regionais de energia e dados.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-energy-yellow/20 text-energy-dark px-3 py-1 rounded-full text-sm">Reservatórios estaduais</span>
+                            <span class="bg-energy-yellow/20 text-energy-dark px-3 py-1 rounded-full text-sm">Hubs regionais</span>
+                            <span class="bg-energy-yellow/20 text-energy-dark px-3 py-1 rounded-full text-sm">Backbone óptico</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Fase 3 -->
+                    <div class="bg-gradient-to-r from-nature-green/10 to-nature-green/5 rounded-2xl p-8 card-hover border-l-4 border-nature-green">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800 flex items-center">
+                                <span class="bg-nature-green text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">3</span>
+                                Malha Nacional
+                            </h3>
+                            <span class="text-nature-dark font-bold mt-2 md:mt-0">8-10 Anos</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            5.000 ramificações municipais e interligação completa do território nacional. Todos os municípios brasileiros conectados aos três pilares.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-nature-green/20 text-nature-dark px-3 py-1 rounded-full text-sm">Cobertura total</span>
+                            <span class="bg-nature-green/20 text-nature-dark px-3 py-1 rounded-full text-sm">5.000+ municípios</span>
+                            <span class="bg-nature-green/20 text-nature-dark px-3 py-1 rounded-full text-sm">Rede 5G nacional</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Fase 4 -->
+                    <div class="bg-gradient-to-r from-purple-500/10 to-purple-500/5 rounded-2xl p-8 card-hover border-l-4 border-purple-500">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800 flex items-center">
+                                <span class="bg-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">4</span>
+                                Internacionalização
+                            </h3>
+                            <span class="text-purple-600 font-bold mt-2 md:mt-0">10+ Anos</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Exportação do modelo Aquavida Global para países da África, Ásia e América Latina. Criação da Aliança Internacional para Água e Energia Sustentável.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-500/20 text-purple-700 px-3 py-1 rounded-full text-sm">Template global</span>
+                            <span class="bg-purple-500/20 text-purple-700 px-3 py-1 rounded-full text-sm">Parcerias internacionais</span>
+                            <span class="bg-purple-500/20 text-purple-700 px-3 py-1 rounded-full text-sm">Modelo replicável</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financiamento -->
+    <section class="py-20 bg-gradient-to-br from-gray-800 to-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Viabilidade Econômica
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Um investimento com retorno garantido para o Brasil e o mundo
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-piggy-bank text-energy-yellow text-3xl mr-4"></i>
+                        Fontes de Financiamento
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-globe text-aqua-blue text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Fundos Multilaterais</p>
+                                <p class="text-gray-300 text-sm">Banco Mundial, BID, ONU Água e Energia, Fundo Verde do Clima</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-building text-nature-green text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Parcerias Público-Privadas</p>
+                                <p class="text-gray-300 text-sm">Governo federal, estados e empresas de energia, telecom e saneamento</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chart-line text-energy-yellow text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Investidores ESG</p>
+                                <p class="text-gray-300 text-sm">Fundos de impacto e empresas comprometidas com sustentabilidade</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-red-400 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Crowdfunding Global</p>
+                                <p class="text-gray-300 text-sm">Apoio social e engajamento da população</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-chart-pie text-nature-green text-3xl mr-4"></i>
+                        Retorno ao Investidor
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-dollar-sign text-energy-yellow text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Financeiro Direto</p>
+                                <p class="text-gray-300 text-sm">Venda de água tratada e excedente de energia solar</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-leaf text-nature-green text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Créditos de Carbono</p>
+                                <p class="text-gray-300 text-sm">Geração e comercialização em mercados internacionais</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-award text-aqua-blue text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Valorização ESG</p>
+                                <p class="text-gray-300 text-sm">Branding e cumprimento de metas de sustentabilidade</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-wifi text-purple-400 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Infraestrutura Digital</p>
+                                <p class="text-gray-300 text-sm">Concessões de fibra óptica e conectividade</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-energy-yellow/20 to-nature-green/20 rounded-2xl p-10 border border-energy-yellow/30 text-center">
+                <h3 class="text-3xl font-bold mb-4">O Projeto do Século da Sustentabilidade Brasileira</h3>
+                <p class="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+                    Um investimento que não apenas gera retorno financeiro, mas transforma a realidade de milhões de pessoas e posiciona o Brasil como líder global em sustentabilidade e inovação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="apoiar" class="py-20 bg-gradient-to-br from-aqua-blue via-nature-green to-energy-yellow">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Faça Parte Desta Transformação
+                </h2>
+                <p class="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed">
+                    Água, energia e conectividade não são luxos — são direitos básicos.<br>
+                    Juntos, podemos tornar isso realidade para todo o Brasil.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-8 border border-white/30">
+                        <i class="fas fa-hand-holding-heart text-5xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Investidor</h3>
+                        <p class="text-white/80 mb-4">Faça parte do maior projeto de infraestrutura sustentável do Brasil</p>
+                        <button class="bg-white text-aqua-blue px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                            Quero Investir
+                        </button>
+                    </div>
+                    
+                    <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-8 border border-white/30">
+                        <i class="fas fa-handshake text-5xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Parceiro</h3>
+                        <p class="text-white/80 mb-4">Empresa, governo ou ONG? Vamos construir juntos esta realidade</p>
+                        <button class="bg-white text-nature-green px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                            Seja Parceiro
+                        </button>
+                    </div>
+                    
+                    <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-8 border border-white/30">
+                        <i class="fas fa-bullhorn text-5xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-3">Apoiador</h3>
+                        <p class="text-white/80 mb-4">Compartilhe esta ideia e ajude a espalhar a mensagem</p>
+                        <button class="bg-white text-energy-dark px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                            Divulgar Projeto
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+                    <h3 class="text-2xl font-bold text-white mb-4">Entre em Contato</h3>
+                    <p class="text-white/90 mb-6">Quer saber mais sobre o Projeto Aquavida?</p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                        <input type="email" placeholder="Seu melhor e-mail" class="px-6 py-3 rounded-full w-full md:w-auto md:min-w-[300px] text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        <button class="bg-white text-aqua-blue px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition w-full md:w-auto">
+                            Receber Informações
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-water text-aqua-blue text-3xl"></i>
+                        <span class="text-2xl font-bold gradient-text">AQUAVIDA</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Água, energia e conectividade: os pilares do novo Brasil.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Projeto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#problema" class="hover:text-aqua-blue transition">O Problema</a></li>
+                        <li><a href="#solucao" class="hover:text-aqua-blue transition">A Solução</a></li>
+                        <li><a href="#como-funciona" class="hover:text-aqua-blue transition">Como Funciona</a></li>
+                        <li><a href="#impactos" class="hover:text-aqua-blue transition">Impactos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Recursos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-aqua-blue transition">Whitepaper</a></li>
+                        <li><a href="#" class="hover:text-aqua-blue transition">Documentação Técnica</a></li>
+                        <li><a href="#" class="hover:text-aqua-blue transition">Estudos de Caso</a></li>
+                        <li><a href="#" class="hover:text-aqua-blue transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-aqua-blue transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-aqua-blue transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-aqua-blue transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-aqua-blue transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Projeto Aquavida. Todos os direitos reservados.</p>
+                <p class="mt-2 text-sm">
+                    Um projeto para transformar o Brasil através da sustentabilidade e inovação.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scroll com offset para a navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animação de contadores ao entrar na viewport
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const text = stat.textContent;
+                        if (text.includes('+') || text.includes('k') || !isNaN(parseInt(text))) {
+                            stat.style.opacity = '0';
+                            stat.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                stat.style.transition = 'all 0.8s ease';
+                                stat.style.opacity = '1';
+                                stat.style.transform = 'translateY(0)';
+                            }, 100);
+                        }
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observar seção de impactos
+        const impactSection = document.querySelector('#impactos');
+        if (impactSection) {
+            observer.observe(impactSection);
+        }
+
+        // Efeito de parallax suave na hero section (desabilitado para evitar conflitos)
+        // window.addEventListener('scroll', () => {
+        //     const scrolled = window.pageYOffset;
+        //     const hero = document.querySelector('.gradient-hero');
+        //     if (hero && scrolled < hero.offsetHeight) {
+        //         hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        //     }
+        // });
+
+        // Adicionar classe de animação aos cards quando entrarem na viewport
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(30px)';
+                    setTimeout(() => {
+                        entry.target.style.transition = 'all 0.6s ease';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            cardObserver.observe(card);
+        });
+
+        // Navbar transparente quando no topo
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
