@@ -99,7 +99,7 @@
 <body class="bg-gray-50">
     
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
+    <nav id="main-nav" class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
@@ -112,6 +112,7 @@
                     <a href="#como-funciona" class="text-gray-700 hover:text-aqua-blue transition">Como Funciona</a>
                     <a href="#impactos" class="text-gray-700 hover:text-aqua-blue transition">Impactos</a>
                     <a href="#roadmap" class="text-gray-700 hover:text-aqua-blue transition">Roadmap</a>
+                    <a href="#faq" class="text-gray-700 hover:text-aqua-blue transition">FAQ</a>
                 </div>
                 <a href="#apoiar" class="bg-gradient-to-r from-aqua-blue to-nature-green text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition pulse-button">
                     Apoiar o Projeto
@@ -121,7 +122,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20" style="position: relative;">
+    <section id="hero" class="gradient-hero min-h-screen flex items-center justify-center relative overflow-hidden pt-20" style="position: relative;">
         <div class="absolute inset-0 opacity-10">
             <div class="absolute top-20 left-10 text-white text-9xl animate-float">💧</div>
             <div class="absolute bottom-20 right-20 text-white text-9xl animate-float" style="animation-delay: 1s;">☀️</div>
@@ -732,6 +733,327 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Perguntas Frequentes
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Entenda melhor o Projeto AquaDuto e como você pode fazer parte desta transformação
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-gradient-to-r from-aqua-blue/5 to-aqua-blue/10 rounded-2xl overflow-hidden border border-aqua-blue/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-aqua-blue/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-question-circle text-aqua-blue mr-3"></i>
+                            Qual é o objetivo principal do Projeto AquaDuto?
+                        </h3>
+                        <i class="fas fa-chevron-down text-aqua-blue text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-700 leading-relaxed">
+                            O objetivo do Projeto AquaDuto é <strong>criar a base científica e de engenharia</strong> que comprove a viabilidade técnica, econômica e ambiental de uma infraestrutura integrada nacional. Queremos documentar que o projeto é válido e realmente trará melhorias significativas na qualidade de vida das pessoas. Somente com essa documentação sólida iniciaremos uma campanha política e de busca de financiamento para execução.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gradient-to-r from-nature-green/5 to-nature-green/10 rounded-2xl overflow-hidden border border-nature-green/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-nature-green/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-users text-nature-green mr-3"></i>
+                            Quem pode participar do projeto?
+                        </h3>
+                        <i class="fas fa-chevron-down text-nature-green text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            <strong>Precisamos de voluntários em todas as áreas científicas e profissionais:</strong>
+                        </p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-flask text-nature-green mr-3 mt-1"></i>
+                                <span><strong>Cientistas e Pesquisadores:</strong> Engenheiros hidráulicos, ambientais, civis, eletricistas, especialistas em energia solar, telecomunicações, climatologia, hidrologia</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-calculator text-nature-green mr-3 mt-1"></i>
+                                <span><strong>Profissionais de Cálculo:</strong> Analistas de viabilidade econômica, especialistas em modelagem e simulação, estatísticos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-nature-green mr-3 mt-1"></i>
+                                <span><strong>Documentadores:</strong> Escritores técnicos, designers gráficos, produtores de conteúdo educativo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-gavel text-nature-green mr-3 mt-1"></i>
+                                <span><strong>Especialistas Legais:</strong> Advogados ambientais, especialistas em regulação e políticas públicas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gradient-to-r from-energy-yellow/5 to-energy-yellow/10 rounded-2xl overflow-hidden border border-energy-yellow/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-energy-yellow/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-rocket text-energy-dark mr-3"></i>
+                            Como será a estratégia de implementação?
+                        </h3>
+                        <i class="fas fa-chevron-down text-energy-dark text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <div class="space-y-4 text-gray-700">
+                            <div class="bg-aqua-blue/5 rounded-lg p-4 border-l-4 border-aqua-blue">
+                                <h4 class="font-bold text-aqua-dark mb-2"><i class="fas fa-microscope mr-2"></i>Fase 1: Base Científica (Atual)</h4>
+                                <p>Desenvolvimento de estudos, cálculos, modelagens e documentação técnica completa para validar o projeto.</p>
+                            </div>
+                            <div class="bg-nature-green/5 rounded-lg p-4 border-l-4 border-nature-green">
+                                <h4 class="font-bold text-nature-dark mb-2"><i class="fas fa-check-double mr-2"></i>Fase 2: Validação</h4>
+                                <p>Revisão por pares, análise de especialistas independentes e validação científica da documentação produzida.</p>
+                            </div>
+                            <div class="bg-energy-yellow/10 rounded-lg p-4 border-l-4 border-energy-dark">
+                                <h4 class="font-bold text-energy-dark mb-2"><i class="fas fa-bullhorn mr-2"></i>Fase 3: Campanha Política e Financiamento</h4>
+                                <p>Com a documentação validada, iniciar campanha de divulgação, busca de apoio político e captação de recursos.</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
+                                <h4 class="font-bold text-purple-700 mb-2"><i class="fas fa-tools mr-2"></i>Fase 4: Execução</h4>
+                                <p>Implementação gradual do projeto conforme planejamento e disponibilidade de recursos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gradient-to-r from-purple-500/5 to-purple-500/10 rounded-2xl overflow-hidden border border-purple-500/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-purple-500/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-handshake text-purple-600 mr-3"></i>
+                            Como influencers, políticos e empresas podem apoiar?
+                        </h3>
+                        <i class="fas fa-chevron-down text-purple-600 text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            <strong>Precisamos de apoiadores estratégicos em três frentes:</strong>
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-5 border border-pink-200">
+                                <i class="fas fa-star text-pink-600 text-3xl mb-3"></i>
+                                <h4 class="font-bold text-gray-800 mb-2">Influencers</h4>
+                                <p class="text-sm text-gray-700">Divulgação nas redes sociais, criação de conteúdo educativo, engajamento da comunidade com a causa</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-5 border border-blue-200">
+                                <i class="fas fa-landmark text-blue-600 text-3xl mb-3"></i>
+                                <h4 class="font-bold text-gray-800 mb-2">Políticos</h4>
+                                <p class="text-sm text-gray-700">Advocacy política, inclusão em agendas governamentais, facilitação de aprovações e parcerias institucionais</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-5 border border-green-200">
+                                <i class="fas fa-building text-green-600 text-3xl mb-3"></i>
+                                <h4 class="font-bold text-gray-800 mb-2">Empresas</h4>
+                                <p class="text-sm text-gray-700">Financiamento, patrocínio, expertise técnica, infraestrutura e recursos para pesquisa e desenvolvimento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-gradient-to-r from-aqua-blue/5 to-nature-green/5 rounded-2xl overflow-hidden border border-aqua-blue/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-aqua-blue/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-clipboard-check text-aqua-blue mr-3"></i>
+                            Que tipo de documentação está sendo desenvolvida?
+                        </h3>
+                        <i class="fas fa-chevron-down text-aqua-blue text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            A documentação técnica incluirá:
+                        </p>
+                        <ul class="grid md:grid-cols-2 gap-3 text-gray-700">
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Estudos de viabilidade técnica e econômica</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Análises de impacto ambiental</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Modelagens hidráulicas e energéticas</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Projeções de custos e retorno</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Análises de impacto social</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Estudos de regulamentação e compliance</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Planos de implementação faseada</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 rounded-lg p-3">
+                                <i class="fas fa-check-circle text-aqua-blue mr-3 mt-1"></i>
+                                <span>Comparações com projetos similares globais</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-gradient-to-r from-red-500/5 to-orange-500/5 rounded-2xl overflow-hidden border border-red-500/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-red-500/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-clock text-red-600 mr-3"></i>
+                            Quanto tempo levará para o projeto estar pronto?
+                        </h3>
+                        <i class="fas fa-chevron-down text-red-600 text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            A fase de desenvolvimento da base científica depende da colaboração de voluntários e especialistas. Estimamos:
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                                <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">1-2</div>
+                                <div>
+                                    <p class="font-bold text-gray-800">Anos para base científica</p>
+                                    <p class="text-sm text-gray-600">Com equipe de voluntários dedicados</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                                <div class="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">6-12</div>
+                                <div>
+                                    <p class="font-bold text-gray-800">Meses para validação</p>
+                                    <p class="text-sm text-gray-600">Revisão e aprovação científica</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                                <div class="bg-yellow-500 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">Var.</div>
+                                <div>
+                                    <p class="font-bold text-gray-800">Campanha política e financiamento</p>
+                                    <p class="text-sm text-gray-600">Dependente de engajamento e apoio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="bg-gradient-to-r from-green-500/5 to-green-500/10 rounded-2xl overflow-hidden border border-green-500/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-green-500/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-heart text-green-600 mr-3"></i>
+                            Como posso contribuir agora?
+                        </h3>
+                        <i class="fas fa-chevron-down text-green-600 text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Existem várias formas de contribuir imediatamente:
+                        </p>
+                        <div class="space-y-3">
+                            <div class="bg-gradient-to-r from-aqua-blue/10 to-aqua-blue/5 rounded-lg p-4 border border-aqua-blue/30">
+                                <h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-user-graduate text-aqua-blue mr-2"></i>Como Especialista Voluntário</h4>
+                                <p class="text-gray-700 text-sm mb-2">Contribua com sua expertise em estudos, cálculos e análises técnicas</p>
+                                <a href="#apoiar" class="text-aqua-blue font-semibold text-sm hover:underline">Entre em contato →</a>
+                            </div>
+                            <div class="bg-gradient-to-r from-purple-600/10 to-purple-600/5 rounded-lg p-4 border border-purple-600/30">
+                                <h4 class="font-bold text-gray-800 mb-2"><i class="fab fa-github text-purple-700 mr-2"></i>Colabore no GitHub</h4>
+                                <p class="text-gray-700 text-sm mb-2">Acesse o repositório, contribua com código, documentação ou sugestões</p>
+                                <a href="https://github.com/Skyrioca/agua-energia-internet" target="_blank" rel="noopener noreferrer" class="text-purple-700 font-semibold text-sm hover:underline inline-flex items-center">
+                                    Ver no GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                                </a>
+                            </div>
+                            <div class="bg-gradient-to-r from-nature-green/10 to-nature-green/5 rounded-lg p-4 border border-nature-green/30">
+                                <h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-share-alt text-nature-green mr-2"></i>Como Divulgador</h4>
+                                <p class="text-gray-700 text-sm mb-2">Compartilhe o projeto nas suas redes, fale sobre ele, ajude a espalhar a ideia</p>
+                                <a href="#apoiar" class="text-nature-green font-semibold text-sm hover:underline">Seja um apoiador →</a>
+                            </div>
+                            <div class="bg-gradient-to-r from-energy-yellow/10 to-energy-yellow/5 rounded-lg p-4 border border-energy-yellow/30">
+                                <h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-hands-helping text-energy-dark mr-2"></i>Como Parceiro ou Patrocinador</h4>
+                                <p class="text-gray-700 text-sm mb-2">Empresas e instituições podem oferecer recursos, infraestrutura ou financiamento</p>
+                                <a href="#apoiar" class="text-energy-dark font-semibold text-sm hover:underline">Seja parceiro →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="bg-gradient-to-r from-indigo-500/5 to-indigo-500/10 rounded-2xl overflow-hidden border border-indigo-500/20">
+                    <button class="faq-button w-full text-left p-6 flex justify-between items-center hover:bg-indigo-500/10 transition">
+                        <h3 class="text-xl font-bold text-gray-800 pr-8">
+                            <i class="fas fa-globe-americas text-indigo-600 mr-3"></i>
+                            Por que esse projeto é tão importante para o Brasil?
+                        </h3>
+                        <i class="fas fa-chevron-down text-indigo-600 text-xl faq-icon"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            O Projeto AquaDuto não é apenas sobre infraestrutura — é sobre <strong>transformar fundamentalmente a qualidade de vida de milhões de brasileiros</strong> e posicionar o Brasil como líder global em sustentabilidade.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                                <h4 class="font-bold text-blue-900 mb-2">Segurança Hídrica</h4>
+                                <p class="text-sm text-gray-700">Acabar com a crise de água em áreas urbanas e rurais</p>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                                <h4 class="font-bold text-green-900 mb-2">Energia Limpa</h4>
+                                <p class="text-sm text-gray-700">Transição energética com geração solar distribuída</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
+                                <h4 class="font-bold text-purple-900 mb-2">Inclusão Digital</h4>
+                                <p class="text-sm text-gray-700">Internet de alta velocidade para todos os municípios</p>
+                            </div>
+                            <div class="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                                <h4 class="font-bold text-yellow-900 mb-2">Desenvolvimento Econômico</h4>
+                                <p class="text-sm text-gray-700">Milhões de empregos e impulso à economia local</p>
+                            </div>
+                            <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                                <h4 class="font-bold text-red-900 mb-2">Combate à Desertificação</h4>
+                                <p class="text-sm text-gray-700">Recuperação de biomas e reversão de danos ambientais</p>
+                            </div>
+                            <div class="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-500">
+                                <h4 class="font-bold text-indigo-900 mb-2">Liderança Global</h4>
+                                <p class="text-sm text-gray-700">Modelo replicável para outros países</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 bg-gradient-to-r from-aqua-blue/10 to-nature-green/10 rounded-lg p-4 border border-aqua-blue/30">
+                            <p class="text-center text-gray-800 font-semibold">
+                                <i class="fas fa-star text-energy-yellow mr-2"></i>
+                                Este é o projeto que pode redefinir o futuro do Brasil
+                                <i class="fas fa-star text-energy-yellow ml-2"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA dentro do FAQ -->
+            <div class="mt-16 bg-gradient-to-r from-aqua-blue/10 via-nature-green/10 to-energy-yellow/10 rounded-3xl p-10 text-center border-2 border-aqua-blue/30">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                    Ainda tem dúvidas?
+                </h3>
+                <p class="text-xl text-gray-700 mb-6">
+                    Entre em contato conosco e saiba como você pode fazer parte desta transformação
+                </p>
+                <a href="#apoiar" class="inline-block bg-gradient-to-r from-aqua-blue to-nature-green text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
+                    Falar com a Equipe <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action -->
     <section id="apoiar" class="py-20 bg-gradient-to-br from-aqua-blue via-nature-green to-energy-yellow">
         <div class="container mx-auto px-6 text-center">
@@ -749,27 +1071,27 @@
                         <i class="fas fa-hand-holding-heart text-5xl text-white mb-4"></i>
                         <h3 class="text-xl font-bold text-white mb-3">Investidor</h3>
                         <p class="text-white/80 mb-4">Faça parte do maior projeto de infraestrutura sustentável do Brasil</p>
-                        <button class="bg-white text-aqua-blue px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                        <a href="mailto:contato@aquaduto.com.br?subject=Interesse em Investir no Projeto AquaDuto&body=Olá,%0D%0A%0D%0AGostaria de receber mais informações sobre oportunidades de investimento no Projeto AquaDuto.%0D%0A%0D%0AAtenciosamente," class="inline-block bg-white text-aqua-blue px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
                             Quero Investir
-                        </button>
+                        </a>
                     </div>
                     
                     <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-8 border border-white/30">
                         <i class="fas fa-handshake text-5xl text-white mb-4"></i>
                         <h3 class="text-xl font-bold text-white mb-3">Parceiro</h3>
                         <p class="text-white/80 mb-4">Empresa, governo ou ONG? Vamos construir juntos esta realidade</p>
-                        <button class="bg-white text-nature-green px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                        <a href="mailto:contato@aquaduto.com.br?subject=Proposta de Parceria - Projeto AquaDuto&body=Olá,%0D%0A%0D%0AGostaria de explorar oportunidades de parceria com o Projeto AquaDuto.%0D%0A%0D%0AAtenciosamente," class="inline-block bg-white text-nature-green px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
                             Seja Parceiro
-                        </button>
+                        </a>
                     </div>
                     
                     <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-8 border border-white/30">
                         <i class="fas fa-bullhorn text-5xl text-white mb-4"></i>
                         <h3 class="text-xl font-bold text-white mb-3">Apoiador</h3>
                         <p class="text-white/80 mb-4">Compartilhe esta ideia e ajude a espalhar a mensagem</p>
-                        <button class="bg-white text-energy-dark px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
+                        <a href="mailto:contato@aquaduto.com.br?subject=Quero Apoiar e Divulgar o Projeto AquaDuto&body=Olá,%0D%0A%0D%0AGostaria de ajudar a divulgar o Projeto AquaDuto e saber como posso contribuir.%0D%0A%0D%0AAtenciosamente," class="inline-block bg-white text-energy-dark px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition">
                             Divulgar Projeto
-                        </button>
+                        </a>
                     </div>
                 </div>
                 
@@ -814,15 +1136,15 @@
                 <div>
                     <h4 class="font-bold text-lg mb-4">Recursos</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-aqua-blue transition">Whitepaper</a></li>
-                        <li><a href="#" class="hover:text-aqua-blue transition">Documentação Técnica</a></li>
-                        <li><a href="#" class="hover:text-aqua-blue transition">Estudos de Caso</a></li>
-                        <li><a href="#" class="hover:text-aqua-blue transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-aqua-blue transition">Whitepaper (em breve)</a></li>
+                        <li><a href="#" class="hover:text-aqua-blue transition">Documentação Técnica (em breve)</a></li>
+                        <li><a href="#" class="hover:text-aqua-blue transition">Estudos de Caso (em breve)</a></li>
+                        <li><a href="#faq" class="hover:text-aqua-blue transition">FAQ</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Redes Sociais</h4>
+                    <h4 class="font-bold text-lg mb-4">Redes Sociais (em breve)</h4>
                     <div class="flex space-x-4">
                         <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-aqua-blue transition">
                             <i class="fab fa-facebook-f"></i>
@@ -852,11 +1174,12 @@
     <!-- JavaScript -->
     <script>
         // Smooth scroll com offset para a navbar
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                const target = document.querySelector(href);
                 if (target) {
+                    e.preventDefault();
                     const offsetTop = target.offsetTop - 80;
                     window.scrollTo({
                         top: offsetTop,
@@ -893,8 +1216,8 @@
             });
         }, observerOptions);
 
-        // Observar seção de impactos
-        const impactSection = document.querySelector('#impactos');
+        // Observar seção de impactos - usando getElementById
+        const impactSection = document.getElementById('impactos');
         if (impactSection) {
             observer.observe(impactSection);
         }
@@ -902,7 +1225,7 @@
         // Efeito de parallax suave na hero section (desabilitado para evitar conflitos)
         // window.addEventListener('scroll', () => {
         //     const scrolled = window.pageYOffset;
-        //     const hero = document.querySelector('.gradient-hero');
+        //     const hero = document.getElementById('hero');
         //     if (hero && scrolled < hero.offsetHeight) {
         //         hero.style.transform = `translateY(${scrolled * 0.5}px)`;
         //     }
@@ -928,14 +1251,36 @@
             cardObserver.observe(card);
         });
 
-        // Navbar transparente quando no topo
+        // Navbar transparente quando no topo - usando getElementById
+        const mainNav = document.getElementById('main-nav');
         window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
-                nav.classList.add('shadow-lg');
+                mainNav.classList.add('shadow-lg');
             } else {
-                nav.classList.remove('shadow-lg');
+                mainNav.classList.remove('shadow-lg');
             }
+        });
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                
+                // Toggle current FAQ
+                const isOpen = !content.classList.contains('hidden');
+                
+                if (isOpen) {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                }
+                
+                // Smooth transition
+                icon.style.transition = 'transform 0.3s ease';
+            });
         });
     </script>
 </body>
