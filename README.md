@@ -398,7 +398,9 @@ A todos os profissionais, voluntários e entusiastas que acreditam que juntos po
 
 ## 📞 Contato
 
-**Mantenedor do Projeto:** [Seu Nome/E-mail]
+**Mantenedor do Projeto:** 
+Luciano de Medeiros
+luciano.medeiros@outlook.com
 
 **Website:** [Em breve]
 
