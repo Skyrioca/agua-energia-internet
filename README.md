@@ -379,12 +379,13 @@ Ao participar do Projeto Aquavida, você concorda em:
 
 | Fase | Status | Progresso |
 |------|--------|-----------|
-| 1. Planejamento Estratégico | 🟡 Em andamento | ████░░░░░░ 40% |
-| 2. Estrutura Institucional | 🟡 Em andamento | ███░░░░░░░ 30% |
-| 3. Captação de Recursos | 🟡 Em andamento | ██░░░░░░░░ 20% |
-| 4. Engenharia e Infraestrutura | 🔵 Iniciando | █░░░░░░░░░ 10% |
+| 0. Concepção, Divulgação e Busca de profissionais | 🔵 Iniciando | ░░░░░░░░░░ 0.1% |
+| 1. Planejamento Estratégico | ⚪ Aguardando | ░░░░░░░░░░ 0% |
+| 2. Estrutura Institucional | ⚪ Aguardando | ░░░░░░░░░░ 0% |
+| 3. Captação de Recursos | ⚪ Aguardando | ░░░░░░░░░░ 0% |
+| 4. Engenharia e Infraestrutura | ⚪ Aguardando | ░░░░░░░░░░ 0% |
 | 5. Sustentabilidade e Operação | ⚪ Aguardando | ░░░░░░░░░░ 0% |
-| 6. Comunicação e Engajamento | 🟡 Em andamento | ████░░░░░░ 40% |
+| 6. Comunicação e Engajamento | ⚪ Aguardando | ░░░░░░░░░░ 0% |
 | 7. Expansão Nacional | ⚪ Aguardando | ░░░░░░░░░░ 0% |
 | 8. Internacionalização | ⚪ Aguardando | ░░░░░░░░░░ 0% |
 
