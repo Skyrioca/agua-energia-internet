@@ -1,4 +1,4 @@
-# 🌍 **AQUAVIDA GLOBAL INITIATIVE**
+# 🌍 **AquaDuto GLOBAL INITIATIVE**
 
 ### *Modelo Internacional de Infraestrutura Sustentável Integrada: Água, Energia e Dados*
 
@@ -8,7 +8,7 @@
 
 > Levar **água, energia limpa e conectividade digital** a todas as comunidades do planeta, restaurando ecossistemas e impulsionando o desenvolvimento sustentável.
 
-O **Projeto Aquavida Global** propõe um **modelo modular replicável** que integra:
+O **Projeto AquaDuto Global** propõe um **modelo modular replicável** que integra:
 
 * **Aquadutos solares** → combate à escassez de água;
 * **Corredores fotovoltaicos** → geração e transmissão limpa de energia;
@@ -36,7 +36,7 @@ O template será estruturado em **módulos técnicos e metodológicos**, permiti
 
 ## 🗺️ 3. Arquitetura Internacional
 
-O Aquavida Global pode ser visto como uma **malha de projetos regionais** interconectados.
+O AquaDuto Global pode ser visto como uma **malha de projetos regionais** interconectados.
 Cada país se torna um **“nó” de sustentabilidade continental**, e a soma deles forma a **Rede Global de Sustentabilidade Hídrica e Digital (RGS-HD)**.
 
 ### Continentes prioritários:
@@ -51,17 +51,17 @@ Cada país se torna um **“nó” de sustentabilidade continental**, e a soma d
 
 ## 🌐 4. Estrutura Organizacional Internacional
 
-### **1. Conselho Global Aquavida (GAC)**
+### **1. Conselho Global AquaDuto (GAC)**
 
 Responsável por diretrizes, auditoria e padrões técnicos internacionais.
 
-### **2. Centros Regionais Aquavida (ARC)**
+### **2. Centros Regionais AquaDuto (ARC)**
 
 * Um por continente.
 * Coordenam adaptações locais e parcerias.
 * Treinam equipes de engenharia e gestão regional.
 
-### **3. Hubs Nacionais Aquavida (ANC)**
+### **3. Hubs Nacionais AquaDuto (ANC)**
 
 * Entidades nacionais que implementam e operam o modelo.
 * Conectadas a universidades, ONGs e governos locais.
@@ -84,7 +84,7 @@ O template conterá:
 
 **Licenciamento:**
 
-* Cada país parceiro licencia o **template Aquavida**, com suporte técnico e treinamento.
+* Cada país parceiro licencia o **template AquaDuto**, com suporte técnico e treinamento.
 
 **Financiamento híbrido:**
 
@@ -116,7 +116,7 @@ O template conterá:
 | ---- | ----------------------------- | --------------------------------------------------------------------------------- |
 | 1️⃣  | **Proof of Concept (Brasil)** | Implementação do primeiro corredor hídrico-energético-digital (Amazônia → Sertão) |
 | 2️⃣  | **Replication Kit v1.0**      | Criação do template técnico e metodológico multilíngue                            |
-| 3️⃣  | **Global Aquavida Summit**    | Evento internacional para adesão de países e instituições                         |
+| 3️⃣  | **Global AquaDuto Summit**    | Evento internacional para adesão de países e instituições                         |
 | 4️⃣  | **Deployment Africa & Asia**  | Primeiras implantações fora do Brasil                                             |
 | 5️⃣  | **SustainaNet Alliance**      | Rede permanente global de cooperação técnica e científica                         |
 
@@ -125,15 +125,15 @@ O template conterá:
 ## 🕊️ 9. Mensagem Central
 
 > “Água é vida, energia é força, e dados são liberdade.
-> O Projeto Aquavida une os três para reconstruir o equilíbrio do planeta.”
+> O Projeto AquaDuto une os três para reconstruir o equilíbrio do planeta.”
 
 ---
 
 ## 🌐 10. Próximos Passos Práticos
 
-1. Criar o **“Aquavida Global Whitepaper”** em português e inglês.
+1. Criar o **“AquaDuto Global Whitepaper”** em português e inglês.
 2. Desenvolver o **template digital modular** (em formato JSON + PDF técnico).
 3. Criar uma **organização sem fins lucrativos internacional (ONG)** para liderar a expansão.
 4. Registrar **marca e patente do conceito de infraestrutura tripla integrada**.
-5. Criar o **site global: aquavida.global** com mapa interativo e versão multilíngue.
+5. Criar o **site global: AquaDuto.global** com mapa interativo e versão multilíngue.
 

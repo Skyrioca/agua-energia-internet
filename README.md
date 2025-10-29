@@ -1,8 +1,8 @@
-# 🌎 Projeto Aquavida
+# 🌎 Projeto AquaDuto
 
 <div align="center">
 
-![Projeto Aquavida](https://img.shields.io/badge/Projeto-Aquavida-0891b2?style=for-the-badge)
+![Projeto AquaDuto](https://img.shields.io/badge/Projeto-AquaDuto-0891b2?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Fase_Inicial-10b981?style=for-the-badge)
 ![Contribuidores](https://img.shields.io/badge/Contribuidores-Bem_Vindos-fbbf24?style=for-the-badge)
 
@@ -18,7 +18,7 @@
 
 ## 🎯 Sobre o Projeto
 
-O **Projeto Aquavida** é uma iniciativa de **impacto nacional e global** que propõe a criação de uma superinfraestrutura integrada para levar **água potável, energia limpa e internet de alta velocidade** a todos os municípios brasileiros.
+O **Projeto AquaDuto** é uma iniciativa de **impacto nacional e global** que propõe a criação de uma superinfraestrutura integrada para levar **água potável, energia limpa e internet de alta velocidade** a todos os municípios brasileiros.
 
 ### Os 3 Pilares
 
@@ -250,7 +250,7 @@ O projeto está organizado seguindo a metodologia de **Estrutura Analítica do P
 
 2. **Envie um e-mail** para o mantenedor do projeto com:
    ```
-   Assunto: [Aquavida] Solicitação de Acesso - [Sua Área]
+   Assunto: [AquaDuto] Solicitação de Acesso - [Sua Área]
    
    Nome Completo:
    Usuário GitHub: @seu-usuario
@@ -363,7 +363,7 @@ Este projeto é também uma **oportunidade de aprendizado**:
 
 ## 🌟 Código de Conduta
 
-Ao participar do Projeto Aquavida, você concorda em:
+Ao participar do Projeto AquaDuto, você concorda em:
 
 - ✅ Ser respeitoso e colaborativo
 - ✅ Focar no bem comum e impacto social
@@ -401,9 +401,10 @@ A todos os profissionais, voluntários e entusiastas que acreditam que juntos po
 
 **Mantenedor do Projeto:** 
 Luciano de Medeiros
-luciano.medeiros@outlook.com
+luc@aquaduto.com.br
 
-**Website:** [Em breve]
+**Website:**
+aquaduto.com.br
 
 **Redes Sociais:** [Em breve]
 

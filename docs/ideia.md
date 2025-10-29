@@ -1,4 +1,4 @@
-# 🌎 Projeto Aquavida
+# 🌎 Projeto AquaDuto
 
 ### **Rede Nacional de Aquadutos, Energia Solar e Fibra Óptica do Brasil**
 
@@ -26,7 +26,7 @@ Enquanto isso:
 
 ## 2. 💡 A Solução Integrada
 
-O **Projeto Aquavida** propõe a criação de uma **superinfraestrutura nacional** interligando:
+O **Projeto AquaDuto** propõe a criação de uma **superinfraestrutura nacional** interligando:
 
 1. **Água** — Aquadutos solares que captam e distribuem água doce do Rio Amazonas até todos os municípios brasileiros.
 2. **Energia** — Corredores fotovoltaicos sobre os dutos gerando energia para o bombeamento e abastecimento local.
@@ -133,7 +133,7 @@ Cada cidade recebe:
 
 ## 10. 🚀 Apelo Global
 
-O **Aquavida** pode ser apresentado como o **“Projeto do Século da Sustentabilidade Brasileira”**, com benefícios diretos:
+O **AquaDuto** pode ser apresentado como o **“Projeto do Século da Sustentabilidade Brasileira”**, com benefícios diretos:
 
 * **Humanitários** (água e internet são direitos básicos).
 * **Climáticos** (recuperação ambiental).
@@ -146,6 +146,6 @@ O **Aquavida** pode ser apresentado como o **“Projeto do Século da Sustentabi
 
 1. Criar **documento oficial (whitepaper)** do projeto.
 2. Produzir **pitch deck bilíngue (PT/EN)** com mapas e ilustrações.
-3. Criar **portal institucional** (aquavida.org.br) com visual interativo.
+3. Criar **portal institucional** (AquaDuto.org.br) com visual interativo.
 4. Lançar **campanha internacional** de crowdfunding e awareness.
 5. Engajar influenciadores e ONGs ambientais globais.
